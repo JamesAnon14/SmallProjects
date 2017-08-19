@@ -79,10 +79,13 @@ def next_class():
     space = ' '
     with_it = ' with '
     at = 'at'
-
+    
+    
+#   The numbers between the brackets on the second 'if' statement represent the time (24 hour clock)
+#   This part is not fully completed, enough to know what's happening though
     now_class = intro + space + sub + with_it + teacher + space + at + space + class_start
     if now_day == 'Saturday':
-        if datetime.time(9) <= timestamp <= datetime.time(9, 8):
+        if datetime.time(9) <= timestamp <= datetime.time(9, 08):
             now_class = new_intro + space + subAre + space + teach_never
             return now_class
         if datetime.time(20, 07) <= timestamp <= datetime.time(20, 10):
