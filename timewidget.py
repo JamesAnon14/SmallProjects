@@ -162,6 +162,7 @@ tick()
 #Refreshes class label (broken)
 def class_school():
     global classvar
+    func_class = next_class()
     if func_class != classvar:
         classvar = func_class
         classtime.config(text=func_class)
